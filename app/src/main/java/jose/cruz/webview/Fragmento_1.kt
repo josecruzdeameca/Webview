@@ -73,7 +73,7 @@ class Fragmento_1 : Fragment() {
 
 
         b_ir!!.setOnClickListener {
-            var url = et_url!!.text.toString().trim()
+            val url = et_url!!.text.toString().trim()
             var url_final = ""
             if( url.startsWith("www") ){
                url_final = "http://$url"
@@ -140,5 +140,8 @@ class Fragmento_1 : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+
+
+
     }
 }
